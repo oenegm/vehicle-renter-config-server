@@ -2,10 +2,12 @@ package com.vehiclerenter.configserver
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
+import org.springframework.cloud.config.server.EnableConfigServer
 
 @SpringBootApplication
-class ConfigserverApplication
+@EnableConfigServer
+class ConfigServerApplication
 
 fun main(args: Array<String>) {
-    runApplication<ConfigserverApplication>(*args)
+    runApplication<ConfigServerApplication>(*args)
 }

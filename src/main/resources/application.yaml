@@ -1,0 +1,14 @@
+debug: true
+
+logging:
+  level:
+    httpclient:
+      wire: DEBUG
+    org:
+      springframework:
+        web:
+          servlet.DispatcherServlet: DEBUG
+          client.RestTemplate: DEBUG
+      hibernate:
+        SQL: DEBUG
+        type.descriptor.sql.BasicBinder: TRACE
